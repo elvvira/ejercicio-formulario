@@ -447,8 +447,8 @@ body {
 .card-front__logo {
   width: 60px;
   position: absolute;
-  top: -40px;
-  left: -10px;
+  top: 10px;
+  left: 10px;
 }
 
 .form {
@@ -502,6 +502,11 @@ body {
   .form__button {
     width: 50%;
   }
+}
+
+::placeholder {
+  color: rgb(190, 189, 189);
+  font-size: 0.9rem;
 }
 
 :root {
