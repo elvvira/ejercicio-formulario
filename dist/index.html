@@ -13,5 +13,50 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Forms Exercise</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <div class="cards">
+        <div class="card card-back">
+          <p id="cvc" class="card-back__text">000</p>
+        </div>
+        <div class="card card-front">
+          <div class="card-front__container">
+            <img class="card-front__logo" src="assets/images/card-logo.svg" alt="">
+            <p id="card-number" class="card-front__numbers">0000 0000 0000 0000</p>
+            <div class="card-front__datos">
+              <p id="name">JANE APPLESEED</p>
+              <p id="date" >00/00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <form id="form" class="form">
+        <div class="form__field">
+            <label for="name">CARDHOLDER NAME</label>
+            <input class="form__input"  type="text" id="name" name="name" placeholder="e.g.Jane Appleseed">
+        </div>
+        <div class="form__field">
+          <label for="card-number">CARD NUMBER</label>
+          <input class="form__input" type="text" id="card-number" name="card" placeholder="e.g. 1234 5678 9123 4567">
+        </div>
+        <div class="form__field">
+          <label for="date">EXP.DATE</label>
+          <input class="form__input" type="number" id="date" name="date" placeholder="MM/YY">
+        </div>
+        <div class="form__field">
+          <label for="cvc">CVC</label>
+          <input class="form__input" type="text" id="cvc" name="cvc" placeholder="e.g.123">
+        </div>
+
+        <button class="form__button">Confirm</button>
+      </form>
+      
+    </main>
+
+
+
+<script src="js/scripts.js"></script>
+  </body>
 </html>
